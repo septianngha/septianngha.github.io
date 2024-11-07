@@ -1,0 +1,76 @@
+/* style-home.css */
+
+/* Gaya gambar profil berbentuk persegi panjang dengan sudut sedikit rounded */
+.img-fluid {
+    max-width: 100%;
+    height: auto;
+    
+}
+
+/* Kustomisasi border-radius untuk gambar persegi panjang */
+.rounded-custom {
+    width: 60%; /* Sesuaikan lebar gambar dengan kolom */
+    height: 70%; /* Sesuaikan tinggi gambar (misalnya 300px, bisa disesuaikan) */
+    border-radius: 15px; /* Sudut sedikit membulat */
+    object-fit: cover; /* Menjaga proporsi gambar agar pas dengan ukuran */
+}
+
+/* Memberikan gaya pada tombol */
+.btn-home {
+    background-color: #003285;
+    padding: 10px;
+    padding-left: 50px;
+    padding-right: 50px;
+    border-radius: 20px;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    font-size: 100%;
+}
+
+.btn-home:hover {
+    background-color: #fff;
+    padding: 10px;
+    padding-left: 50px;
+    padding-right: 50px;
+    border-radius: 20px;
+    color: 003285;
+    text-align: center;
+    text-decoration: none;
+    font-size: 100%;
+    border-color: #003285;
+    border-style: solid;
+}
+
+
+#teks-home #text-ios {
+    font-size: 70px;          /* Ukuran font lebih besar */
+    font-weight: bold;        /* Membuat teks lebih tebal */
+    color: #FF6500;              /* Mengubah warna teks */
+    text-align: left;       
+    margin-left: 15%;
+}
+
+#teks-home #text-dev {
+    font-size: 70px;          /* Ukuran font lebih besar */
+    font-weight: bold;        /* Membuat teks lebih tebal */
+    color: #FF6500;              /* Mengubah warna teks */
+    text-align: left;       
+    margin-left: 30%;
+}
+
+/* Mengubah gaya teks untuk h1 */
+#teks-home h5 {
+    font-size: 25px;  
+    font-weight: bold;
+    color: #333;    
+    text-align: left;
+}
+
+#teks-home #text-name {
+    color: #003285;
+}
+
+#teks-home p {
+    font-weight: 400;
+}

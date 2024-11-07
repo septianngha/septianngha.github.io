@@ -1,0 +1,64 @@
+/* NAVBAR */
+
+/* Menambahkan margin atas agar konten tidak tertutup oleh navbar */
+body {
+    padding-top: 57px;
+}
+
+/* Menambah tinggi navbar */
+.navbar {
+    padding-top: 1rem;    
+    padding-bottom: 1rem;   
+    /* border-bottom: 3px solid #003285; */
+    background-color: #003285;    
+}
+
+/* Ubah warna teks menu navbar menjadi hitam */
+.navbar-nav .nav-link {
+    color: white !important; /* Menggunakan !important untuk mengatasi aturan Bootstrap */
+    height: 110%;
+    align-items: center;
+}
+
+/* Ubah warna latar belakang dan teks saat hover */
+.navbar-nav .nav-link:hover {
+    color: #003285 !important;
+    background-color: white; /* Ganti dengan warna latar belakang yang diinginkan */
+    border-radius: 5px; /* Menjaga bentuk oval */
+}
+
+
+@media (max-width: 576px) {
+    .navbar-nav .nav-item .nav-link {
+        /* Padding untuk item menu */
+        padding: 10px 20px; /* Atur padding sesuai kebutuhan */
+    }
+}
+
+
+
+#home {
+    padding-top: 45px; /* Sesuaikan nilai ini dengan tinggi navbar */
+    margin-top: -60px; /* Sesuaikan dengan padding untuk mengatasi offset */    
+}
+
+#about {
+    padding-top: 30px;
+}
+
+#resume {
+    padding-top: 70px; /* Sesuaikan nilai ini dengan tinggi navbar */
+    margin-top: 0px; /* Sesuaikan dengan padding untuk mengatasi offset */     
+}
+
+#project {
+    padding-top: 120px; /* Sesuaikan nilai ini dengan tinggi navbar */
+    margin-top: 0px; /* Sesuaikan dengan padding untuk mengatasi offset */ 
+    margin-bottom: 70px;
+}
+
+#contact {
+    padding-top: 100px; /* Sesuaikan nilai ini dengan tinggi navbar */
+    margin-top: -120px; /* Sesuaikan dengan padding untuk mengatasi offset */ 
+    margin-bottom: 0px;
+}

@@ -1,0 +1,164 @@
+/* Grid Layout */
+.project-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 200px);
+    gap: 20px;
+    padding: 20px;
+}
+
+.project-box {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* background-image: url('assets/about-image.png'); Ganti dengan path gambar */
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 200px; /* Sesuaikan tinggi kotak */
+    border-radius: 8px;
+    overflow: hidden;
+    cursor: pointer;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    background-color: #EBEBEB;
+}
+
+/* Layer hitam tambahan untuk efek gelap */
+.project-box::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.6); /* Layer hitam dengan opacity 60% */
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+/* Teks yang muncul di tengah saat di-hover */
+.project-text {
+    position: relative;
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    opacity: 0; /* Awalnya tidak terlihat */
+    transition: opacity 0.3s ease;
+    z-index: 1; /* Pastikan teks berada di atas layer hitam */
+}
+
+/* Efek hover pada kotak proyek */
+.project-box:hover::before {
+    opacity: 1; /* Layer hitam menjadi terlihat */
+}
+
+.project-box:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);    
+}
+
+.project-box:hover .project-text {
+    opacity: 1; /* Teks menjadi terlihat */
+}
+
+#project-1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url('assets/background-image/1.png'); /* Ganti dengan path gambar */
+    background-size: cover; /* Agar gambar memenuhi kotak */
+    background-position: center;
+    border-radius: 8px;    
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+}
+
+#project-2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url('assets/background-image/2.png'); /* Ganti dengan path gambar */
+    background-size: cover; /* Agar gambar memenuhi kotak */
+    background-position: center;
+    border-radius: 8px;    
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+}
+
+#project-3 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url('assets/background-image/3.png'); /* Ganti dengan path gambar */
+    background-size: cover; /* Agar gambar memenuhi kotak */
+    background-position: center;
+    border-radius: 8px;    
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+}
+
+#project-4 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url('assets/background-image/4.png'); /* Ganti dengan path gambar */
+    background-size: cover; /* Agar gambar memenuhi kotak */
+    background-position: center;
+    border-radius: 8px;    
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+}
+
+#project-5 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url('assets/background-image/5.png'); /* Ganti dengan path gambar */
+    background-size: cover; /* Agar gambar memenuhi kotak */
+    background-position: center;
+    border-radius: 8px;    
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+}
+
+
+
+
+
+
+
+
+
+/* Line baris dibawah title PORTOFOLIO PROJECT */
+.divider-custom {
+  margin: -1rem 0 1.5rem;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.divider-custom .divider-custom-line {
+  width: 100%;
+  max-width: 7rem;
+  height: 0.25rem;
+  background-color: #003285;
+  border-radius: 1rem;
+  border-color: #003285;
+}
+.divider-custom .divider-custom-line:first-child {
+  margin-right: 1rem;
+}
+.divider-custom .divider-custom-line:last-child {
+  margin-left: 1rem;
+}
+.divider-custom .divider-custom-icon {
+  color: #003285;
+  font-size: 1.7rem;
+}
+.divider-custom.divider-light .divider-custom-line {
+  background-color: #fff;
+}
+.divider-custom.divider-light .divider-custom-icon {
+  color: #fff;
+}

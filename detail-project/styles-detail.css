@@ -1,0 +1,36 @@
+/* Grid container */
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);  /* 3 kolom dengan lebar otomatis */
+    grid-template-rows: 350px;                /* 1 baris dengan tinggi 700px */
+    gap: 10px;                               /* Jarak antar grid item */
+    justify-content: center;
+    margin: 20px;
+}
+
+/* Grid items */
+.grid-item {
+    /* background-color: #4CAF50; */
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    text-align: center;
+    overflow: hidden;  /* Menyembunyikan bagian gambar yang keluar dari grid */
+}
+
+/* Gambar di dalam grid item */
+.grid-item img {
+    width: 100%;   /* Gambar akan mengisi lebar grid */
+    height: 100%;  /* Gambar akan mengisi tinggi grid */
+    object-fit: contain;  /* Gambar akan menutupi seluruh area tanpa merusak rasio */
+}
+
+/* Responsif untuk layar kecil (misalnya handphone) */
+@media (max-width: 768px) {
+    .grid-container {
+        grid-template-columns: 1fr;  /* Menjadi 1 kolom pada layar kecil */
+        grid-template-rows: repeat(3, 700px); /* 3 baris dengan tinggi 700px */
+    }
+}
