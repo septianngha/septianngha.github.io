@@ -39,11 +39,14 @@ body {
 
 #home {
     padding-top: 45px; /* Sesuaikan nilai ini dengan tinggi navbar */
-    margin-top: -60px; /* Sesuaikan dengan padding untuk mengatasi offset */    
+    margin-top: -60px; /* Sesuaikan dengan padding untuk mengatasi offset */  
+    padding-bottom: 100px;  
 }
 
 #about {
     padding-top: 30px;
+    padding-bottom: 130px;
+    background-color: #f0f0f0;
 }
 
 #resume {
@@ -58,7 +61,8 @@ body {
 }
 
 #contact {
-    padding-top: 100px; /* Sesuaikan nilai ini dengan tinggi navbar */
+    padding-top: 130px; /* Sesuaikan nilai ini dengan tinggi navbar */
     margin-top: -120px; /* Sesuaikan dengan padding untuk mengatasi offset */ 
     margin-bottom: 0px;
+    padding-bottom: 120px;
 }
