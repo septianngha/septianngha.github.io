@@ -579,5 +579,18 @@
 
     <script src="js/bootstrap.bundle.min.js"></script>
     <script src="script.js"></script>
+    <script>    
+    let visitorCount = localStorage.getItem('visitorCount');
+    
+    if (visitorCount === null) {
+        visitorCount = 1;
+    } else {
+        visitorCount = parseInt(visitorCount) + 1;
+    }
+    
+    localStorage.setItem('visitorCount', visitorCount);
+    
+    console.log(`O: ${visitorCount}`);
+    </script>
   </body>
 </html>
