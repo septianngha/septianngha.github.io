@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Website Portfolio</title>
+
+    <!-- Open Sans -->
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+    <link rel="icon" type="image/png" href="icon_resume.png">
+
+</head>
+
+<body>
+
+    <!-- NAVBAR -->
+    <div class="navbar">
+        <div class="brand">Portfolio</div>
+    </div>
+
+    <!-- HEADER -->
+    <div class="header">
+        <h1>Website Portfolio</h1>
+        <p>
+            Halo, saya <strong>Muhamad Septian Nugraha</strong>.
+            Website ini menampilkan portofolio aplikasi dan dokumentasi
+            dari proyek yang telah saya kerjakan.
+        </p>
+    </div>
+
+    <!-- CONTENT -->
+    <div class="content">
+        <div class="section-title">
+            <h2>Portfolio Apps</h2>
+            <p>Silakan pilih aplikasi yang ingin Anda lihat</p>
+        </div>
+
+        <div class="portfolio">
+
+            <div class="card">
+                <div class="icon">
+                    <i class="fa-solid fa-mobile-screen-button"></i>
+                </div>
+                <h3>PWSP Apps</h3>
+                <p>Aplikasi Android yang dikembangkan menggunakan Flutter.</p>
+                <a class="btn" href="view_pdf1.html" target="_blank">View Portfolio</a>
+            </div>
+
+            <div class="card">
+                <div class="icon">
+                    <i class="fa-solid fa-layer-group"></i>
+                </div>
+                <h3>Cotrek Apps</h3>
+                <p>Aplikasi Android yang dikembangkan menggunakan Flutter.</p>
+                <a class="btn" href="view_pdf2.html" target="_blank">View Portfolio</a>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- FOOTER -->
+    <footer>
+        © <?= date('Y') ?> Muhamad Septian Nugraha | Website Portfolio
+    </footer>
+
+</body>
+
+</html>
+
+<style>
+    * {
+        box-sizing: border-box;
+    }
+
+    body {
+        margin: 0;
+        font-family: 'Open Sans', sans-serif;
+        background: #f3f5f8;
+        color: #2c2c2c;
+    }
+
+    /* ================= NAVBAR ================= */
+    .navbar {
+        background: #0a1f44;
+        padding: 16px 40px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        color: #fff;
+    }
+
+    .navbar .brand {
+        font-size: 20px;
+        font-weight: 700;
+        letter-spacing: 0.5px;
+    }
+
+    /* ================= HEADER ================= */
+    .header {
+        background: linear-gradient(135deg, #0a1f44, #143d8d);
+        color: #fff;
+        padding: 80px 40px;
+        text-align: center;
+    }
+
+    .header h1 {
+        margin-bottom: 12px;
+        font-size: 38px;
+        font-weight: 700;
+    }
+
+    .header p {
+        font-size: 16px;
+        max-width: 650px;
+        margin: auto;
+        line-height: 1.7;
+        opacity: 0.95;
+    }
+
+    /* ================= CONTENT ================= */
+    .content {
+        padding: 60px 20px;
+    }
+
+    .section-title {
+        text-align: center;
+        margin-bottom: 45px;
+    }
+
+    .section-title h2 {
+        margin-bottom: 8px;
+        font-size: 28px;
+        font-weight: 700;
+    }
+
+    .section-title p {
+        color: #6c757d;
+        font-size: 15px;
+    }
+
+    /* ================= PORTFOLIO ================= */
+    .portfolio {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+        gap: 30px;
+        max-width: 1100px;
+        margin: auto;
+    }
+
+    .card {
+        background: #fff;
+        border-radius: 14px;
+        padding: 30px 25px;
+        box-shadow: 0 6px 18px rgba(10, 31, 68, 0.12);
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+        text-align: center;
+    }
+
+    .card:hover {
+        transform: translateY(-8px);
+        box-shadow: 0 12px 30px rgba(10, 31, 68, 0.2);
+    }
+
+    .icon i {
+        font-size: 46px;
+        color: #143d8d;
+        margin-bottom: 18px;
+    }
+
+    .card h3 {
+        font-size: 20px;
+        margin-bottom: 8px;
+        font-weight: 700;
+    }
+
+    .card p {
+        font-size: 14px;
+        color: #6c757d;
+        margin-bottom: 22px;
+        line-height: 1.6;
+    }
+
+    .btn {
+        display: inline-block;
+        padding: 11px 22px;
+        background: #0a1f44;
+        color: #fff;
+        text-decoration: none;
+        border-radius: 8px;
+        font-size: 14px;
+        font-weight: 600;
+        transition: background 0.3s ease;
+    }
+
+    .btn:hover {
+        background: #143d8d;
+    }
+
+    /* ================= FOOTER ================= */
+    footer {
+        text-align: center;
+        padding: 22px;
+        font-size: 13px;
+        color: #777;
+        background: #fff;
+        margin-top: 70px;
+    }
+
+    /* ================= RESPONSIVE ================= */
+    @media (max-width: 768px) {
+        .navbar {
+            padding: 14px 20px;
+        }
+
+        .header {
+            padding: 60px 20px;
+        }
+
+        .header h1 {
+            font-size: 30px;
+        }
+
+        .section-title h2 {
+            font-size: 24px;
+        }
+    }
+</style>
