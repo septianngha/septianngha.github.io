@@ -27,57 +27,103 @@
     <div class="header">
         <h1>Website Portfolio</h1>
         <p>
-            Halo, saya <strong>Muhamad Septian Nugraha</strong>.
+            Halo, saya <strong>Muhamad Septian Nugraha</strong>. <br>
             Website ini menampilkan portofolio aplikasi dan dokumentasi
             dari proyek yang telah saya kerjakan.
         </p>
     </div>
 
     <!-- CONTENT -->
-    <div class="content">
-        <div class="section-title">
-            <h2>Portfolio Apps</h2>
-            <p>Silakan pilih aplikasi yang ingin Anda lihat</p>
-        </div>
+    <div class="content">        
 
+        <br><br><br>
+    
         <div class="portfolio">
-
+    
+            <!-- PWSP -->
             <div class="card">
                 <div class="icon">
                     <i class="fa-solid fa-mobile-screen-button"></i>
                 </div>
+    
                 <h3>PWSP Apps</h3>
-                <p>PWSP  Apps  adalah  aplikasi  yang  dikembangkan  untuk  mengelola  administrasi
-                    organisasi PWSP.</p>
-                <a class="btn" href="view_pdf1.html" target="_blank">View Portfolio</a>
+    
+                <div class="tags">
+                    <span>Flutter</span>
+                    <span>REST API</span>
+                    <span>FCM</span>
+                </div>
+    
+                <p>
+                    Aplikasi administrasi organisasi PWSP yang digunakan untuk
+                    mendukung pengelolaan data dan aktivitas organisasi secara
+                    lebih efektif dan terintegrasi.
+                </p>
+    
+                <a class="btn" href="view_pdf1.html" target="_blank">
+                    <i class="fa-solid fa-file-pdf"></i>
+                    View Portfolio
+                </a>
             </div>
-
+    
+            <!-- Cotrek -->
             <div class="card">
                 <div class="icon">
-                    <i class="fa-solid fa-layer-group"></i>
+                    <i class="fa-solid fa-boxes-stacked"></i>
                 </div>
-                <h3>Cotrek Apps</h3>
-                <p>Co-trek  Apps  adalah  aplikasi  yang  digunakan  untuk  melihat  data  produk,
-                    melakukan  pencarian  produk,  serta  memeriksa  stok  dan  varians  produk.</p>
-                <a class="btn" href="view_pdf2.html" target="_blank">View Portfolio</a>
+    
+                <h3>Co-Trek Apps</h3>
+    
+                <div class="tags">
+                    <span>Flutter</span>
+                    <span>REST API</span>
+                    
+                </div>
+    
+                <p>
+                    Aplikasi untuk melihat data produk, melakukan pencarian,
+                    memeriksa stok, serta menampilkan informasi varian produk
+                    secara real-time.
+                </p>
+    
+                <a class="btn" href="view_pdf2.html" target="_blank">
+                    <i class="fa-solid fa-file-pdf"></i>
+                    View Portfolio
+                </a>
             </div>
-
-            <div class="card"></div>
+    
+            <!-- Arei -->
+            <div class="card">
                 <div class="icon">
-                    <i class="fa-solid fa-layer-group"></i>
+                    <i class="fa-solid fa-barcode"></i>
                 </div>
+    
                 <h3>Arei Product Scan Apps</h3>
-                <p>Arei Product Scan Apps adalah aplikasi yang digunakan untuk melihat informasi
-                    produk dengan melakukan pemindaian barcode produk.</p>
-                <a class="btn" href="view_pdf3.html" target="_blank">View Portfolio</a>
+    
+                <div class="tags">
+                    <span>Flutter</span>
+                    <span>Clean Architecture</span>
+                    <span>BLoC</span>
+                </div>
+    
+                <p>
+                    Aplikasi untuk menampilkan informasi produk melalui proses
+                    pemindaian barcode menggunakan scanner bawaan perangkat
+                    maupun kamera.
+                </p>
+    
+                <a class="btn" href="view_pdf4.html" target="_blank">
+                    <i class="fa-solid fa-file-pdf"></i>
+                    View Portfolio
+                </a>
             </div>
-
+    
         </div>
     </div>
 
     <!-- FOOTER -->
     <footer>
-        © <?= date('Y') ?> Muhamad Septian Nugraha | Website Portfolio
+        Muhamad Septian Nugraha | Website Portfolio
     </footer>
 
 </body>
@@ -116,12 +162,15 @@
     .header {
         background: linear-gradient(135deg, #0a1f44, #143d8d);
         color: #fff;
-        padding: 80px 40px;
+        padding-top: 30px;
+        padding-right: 40px;
+        padding-bottom: 60px;
+        padding-left: 40px;
         text-align: center;
     }
 
     .header h1 {
-        margin-bottom: 12px;
+        
         font-size: 38px;
         font-weight: 700;
     }
@@ -135,25 +184,35 @@
     }
 
     /* ================= CONTENT ================= */
-    .content {
-        padding: 60px 20px;
-    }
+    .tags {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin: 16px 0 20px;
+}
 
-    .section-title {
-        text-align: center;
-        margin-bottom: 45px;
-    }
+.tags span {
+    background: #eef4ff;
+    color: #143d8d;
+    padding: 6px 12px;
+    border-radius: 20px;
+    font-size: 12px;
+    font-weight: 600;
+}
 
-    .section-title h2 {
-        margin-bottom: 8px;
-        font-size: 28px;
-        font-weight: 700;
-    }
+.card {
+    display: flex;
+    flex-direction: column;
+}
 
-    .section-title p {
-        color: #6c757d;
-        font-size: 15px;
-    }
+.card p {
+    flex: 1;
+}
+
+.btn i {
+    margin-right: 8px;
+}
 
     /* ================= PORTFOLIO ================= */
     .portfolio {
